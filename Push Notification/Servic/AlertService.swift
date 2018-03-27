@@ -7,3 +7,26 @@
 //
 
 import Foundation
+import UIKit
+
+class AlertService {
+    
+    private init() {}
+    
+    static func composeNote(in vc: UIViewController, completion: @escaping (Note) -> Void) {
+        
+        let alert = UIAlertController(title: "New Note", message: "What's on your mind?", preferredStyle: .alert)
+        alert.addTextField { (titleTextField) in
+            titleTextField.placeholder = "Title"
+        }
+        
+        let postAction = UIAlertAction(title: "Poset", style: .default) { (_) in
+            guard let title = alert.textFields?.first?.text else { return }
+            let note = Note(title: title)
+            completion(note)
+        }
+        alert.addAction(postAction)
+        vc.present(alert, animated: true, completion: nil)
+    }
+    
+}
