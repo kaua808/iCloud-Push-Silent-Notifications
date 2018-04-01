@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4474184207055D900CD86A9 /* CKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4474183207055D900CD86A9 /* CKService.swift */; };
 		C44AAB312069FB92000339D7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44AAB302069FB92000339D7 /* CloudKit.framework */; };
 		C4B4632F2069E2B30063AC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4632E2069E2B30063AC3C /* AppDelegate.swift */; };
 		C4B463312069E2B30063AC3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B463302069E2B30063AC3C /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4474183207055D900CD86A9 /* CKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKService.swift; sourceTree = "<group>"; };
 		C44AAB2E2069FB8F000339D7 /* iCloud Notifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iCloud Notifications.entitlements"; sourceTree = "<group>"; };
 		C44AAB302069FB92000339D7 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		C4B4632B2069E2B30063AC3C /* iCloud Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCloud Notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				C4F2B3A62069F54500DD6D8B /* AlertService.swift */,
+				C4474183207055D900CD86A9 /* CKService.swift */,
 			);
 			path = Servic;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				C4B463312069E2B30063AC3C /* ViewController.swift in Sources */,
 				C4B4632F2069E2B30063AC3C /* AppDelegate.swift in Sources */,
+				C4474184207055D900CD86A9 /* CKService.swift in Sources */,
 				C4F2B3A72069F54500DD6D8B /* AlertService.swift in Sources */,
 				C4F2B3A52069F4AC00DD6D8B /* Notes.swift in Sources */,
 			);
